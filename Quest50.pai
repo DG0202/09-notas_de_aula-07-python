@@ -1,0 +1,17 @@
+
+
+C = 0
+classificao = ''
+print('Celsius, Fahrenheit, Kelvin, Classificação')
+while C <= 100:
+    F = C * 9/5 + 32
+    K = C + 273.15
+    if C < 15:
+        classificao = 'fria'
+    elif 15 <= C <= 25:
+        classificao = 'morna'
+    else:
+        classificao = 'quente'
+    print(C, F, K, classificao)
+
+    C += 10
